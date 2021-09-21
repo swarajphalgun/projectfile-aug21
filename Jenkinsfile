@@ -18,7 +18,7 @@ node {
 	} 
 
 	stage('Deploy') {
-		sh ("docker run -tid -p 5000:80 -v /home/swarajphalgungm/simpli_project1/:/var/www/html ${dockerhubaccountid}/${application}:${BUILD_NUMBER}")
+		sh ("docker run -tid -p 81:80 -v /home/swarajphalgungm/simpli_project1/:/var/www/html ${dockerhubaccountid}/${application}:${BUILD_NUMBER}")
 	}
 	
 	stage('Remove old images') {
