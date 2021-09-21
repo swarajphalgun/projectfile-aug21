@@ -18,7 +18,7 @@ node {
 	} 
 
 	stage('Deploy') {
-		sh ("docker run -tid -p 81:80 -v /home/swarajphalgungm/demo/:/var/www/html/ ${dockerhubaccountid}/${application}:${BUILD_NUMBER}")
+		sh ("docker run -tid -p 81:80 -v /home/swarajphalgungm/demo/:/var/www/html/ ${dockerhubaccountid}/${application}:${BUILD_NUMBER} sleep infinity")
 	}
 	
 	stage('Remove old images') {
