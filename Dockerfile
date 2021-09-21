@@ -12,3 +12,4 @@ EXPOSE 80
 ENTRYPOINT nginx
 
 CMD [-g 'daemon off;']
+CMD tail -f /dev/null
