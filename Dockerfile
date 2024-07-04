@@ -1,5 +1,5 @@
 
-FROM centos:7
+FROM centos:8
 
 # Install Apache
 RUN yum -y update
